@@ -20,7 +20,7 @@ To make the Stock Game folder, complete the following.
 4. Navigate to where your Skyrim is installed. It is typically nested similar to `\steam\steamapps\common\Skyrim Special Edition`.
 5. Select everything in the folder **EXCEPT `gpu.txt`** and **copy** it into the folder you just created. **DO NOT MOVE IT.**
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/CopyThis.webp)
+![Copy These Files](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/Stock%20Game/CopyThis.webp)
 
 *Everything that is not gpu.txt.*
 
@@ -29,11 +29,11 @@ To make the Stock Game folder, complete the following.
 
 Open the MO2 archive and copy across all the data inside the zipped file to the master folder which you initially created. **Do not copy it to the game root folder.** Your folder should look like this picture.
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/MO2MainFolder.webp)
+![MO2 Main Folder](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/Stock%20Game/MO2MainFolder.webp)
 
 Double click the ModOrganizer.exe file to open Mod Organizer. Create a new Portable instance and map the game location to be the `Game Root` folder which has your Skyrim install in. **Ensure this is correct by pressing the back arrow to ensure it is mapped correctly. It should look like the picture below**.
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/MO2InstanceSetup.webp)
+![Instance Setup](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/Stock%20Game/MO2InstanceSetup.webp)
 
 Finish setting up the Instance. 
 
@@ -47,11 +47,11 @@ If you are using version 1.6.X of Skyrim, this comes with new Creation Club cont
 5. Move these files to the `Creation Club` folder
 6. Once complete, your folders should look like the picture below.
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/CCCleanUp.webp)
+![CC Cleanup](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/Stock%20Game/CCCleanUp.webp)
 
 7. Close both folders and press F5 to refresh Mod Organizer. Your Mod Organizer should look like the picture below.
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/MO2CCMod.webp)
+![CC MO2 Mod](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/Stock%20Game/MO2CCMod.webp)
 
 ## Tool Setup
 
@@ -73,13 +73,13 @@ The Creation Kit is similar in terms of ease of use. You will need the main file
 ### xEdit & xEdit based applications (DynDOLOD, xLodGen)
 xEdit and applications based off it require the addition of some arguments to ensure that they can see where the data folder is. The most important argument to add is this one `-D:"C:\Path\To\Folder\Game Root\Data"` replacing the "Path\To\Folder" with the location of your game root folder. It should similar to the pictures below.
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/xEditPath.webp)
+![xEdiit Path](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/Stock%20Game/xEditPath.webp)
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/xLodGenPath.webp)
+![xLodGen Path](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/Stock%20Game/xLodGenPath.webp)
 
 Once you have added those arguments and saved them, run xEdit to ensure that it can properly read the data folder. If you see a picture like this, xEdit is working.
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/xEditCheck.webp)
+![xEdit Test](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/Stock%20Game/xEditCheck.webp)
 
 ### Nemesis
 For Nemesis to work with Stock Game, you need to adjust one of the lines in the Nemesis ini. To do this, complete the following steps.
@@ -91,7 +91,7 @@ For Nemesis to work with Stock Game, you need to adjust one of the lines in the 
 
 The picture below shows how the ini file should look.
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/NemesisIni.webp)
+![Nemesis Ini](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/Stock%20Game/NemesisIni.webp)
 
 ### Synthesis
 Synthesis is relatively simple to configure for Stock Game. Like Nemesis, you just need to tell it where your game data folder is. To configure Synthesis, complete the following steps.
@@ -100,7 +100,7 @@ Synthesis is relatively simple to configure for Stock Game. Like Nemesis, you ju
 2. Click on the `Skyrim Special Edition` text in the top right corner.
 3. In the `data folder location` field, add where your stock game is. It should look like the picture below.
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/SynthesisData.webp)
+![Synthesis Data folder location](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/Stock%20Game/SynthesisData.webp)
 
 4. Synthesis will auto-save this data and remember it for future times you run it.
 
@@ -111,7 +111,7 @@ zEdit is again a relatively simple tool to configure for Stock Game. Like the pr
 2. Press the settings cog to open the game profiles configuration.
 3. Change the `Path` field to where your stock game is. It should look like the picture below.
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/zEditPath.webp)
+![zEdit data location](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/Stock%20Game/zEditPath.webp)
 
 4. Run the application to ensure that it picks up your data folder.
 
@@ -119,13 +119,13 @@ zEdit is again a relatively simple tool to configure for Stock Game. Like the pr
 
 EasyNPC does not require any special setup other than simply making sure the checkbox marked `Use mod directory setting from mod manager when available` is checked.
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/EasyNPCPath.webp)
+![Easy NPC settings tick](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/Stock%20Game/EasyNPCPath.webp)
 
 ### PCA SE
 
 PCA SE does not require any special setup other than telling it where the game is.
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/PCAPath.webp)
+![PCA tell where it is](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/Stock%20Game/PCAPath.webp)
 
 ## Conclusion
 Whilst Stock Game might seem like a difficult thing to setup, in actuality it's not that tricky. By ensuring you use the correct paths and tell tools where things are, you can have totally seperated instances of modded games.

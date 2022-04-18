@@ -24,15 +24,15 @@ xLodGen, ACMOS Road Generator Tool and DynDOLOD should be installed to the `tool
 
 For xLodGen, after the `-sse` line, you **must** add the argument `-o:"x:\Path\To\Output"` to ensure that the generated files go to the correct location and also regen the vanilla meshes. This output folder **cannot be in a folder that is read by MO2 to create the virtual file system**. Place it somewhere like `C:\Games\xLodGen Output`. You may need to zip the output afterwards to ensure that it can be installed as a mod by MO2. An example of how it should look is below.
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/xLodGenPath.webp)
+![xLodGen Path](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/Stock%20Game/xLodGenPath.webp)
 
 Install DynDOLOD 3.0 resources, checking all of the options aside from “Low-Res LOD Textures” and “Holy Cow”. If you are using Skyrim SE V1.6 or newer, you can leave the "Whiterun Exterior Grass" option unchecked. You can use the Low-Res LOD if you wish, but I think it’s best not to. Once you have it installed, you want it placed relatively high in your left pane. I have it positioned in the following location:
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DDResourcesLocation.webp)
+![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/DDResourcesLocation.webp)
 
 Once you have installed and positioned DynDOLOD resources, install Unique Map Framework. Ensure that you select the correct version of Skyrim you are modding. In this case, I am using version 1.6 so select the `1.6.x` option. Next, you want to install A Clear Map of Skyrim (ACMOS). Tick the options as shown in the picture below to ensure that the correct settings are installed.
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/ACMOSInstall.webp)
+![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/ACMOSInstall.webp)
 
 Finally, you’ll want to install the `SSE-Terrain-Tamriel Extended` ESM. This is only needed during xLodGen and can be placed anywhere in the left pane of MO2. I tend to place it above the xLodGen Output. Once installed, activate it only when doing xLodGen and place it below the last worldspace ESM in your load order. In my case, this is `Wyrmstooth`.
   
@@ -45,11 +45,11 @@ Once you have all of that installed and the output paths set, activate `SSE-Terr
 
 Then select xLodGenx64 from the executables dropdown in MO2 and press `Run`. It will proceed to load your entire load order. When it is done, a Dialogue box will open similar to the following:
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/xLodGenSettings.webp)
+![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/xLodGenSettings.webp)
 
 Right click in the `Worldspace` area and press `Select All`. Ensure that only Terrain Lod is selected and then apply your Lod settings. I use custom lod settings for Lod4 to Lod16 which deliver the best performance to quality ratio. For Lod32, you **must** use the ACMOS settings which are shown in the picture below:
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/ACMOSxLodSettings.webp)
+![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/ACMOSxLodSettings.webp)
 
 Press the `Generate` button and allow xLodGen to run and do its work. When complete, it will say “Lod Generation completed”. You can then close the program. 
 
@@ -57,7 +57,7 @@ Press the `Generate` button and allow xLodGen to run and do its work. When compl
 
 Navigate to where you have installed the ACMOS road gen tool and open the program. You will greeted by a screen similar to the one below: 
 
-[alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/ACMOSRoadGen.webp)
+[alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/ACMOSRoadGen.webp)
 
 Click `browse` and navigate to where your xLodgen output folder is. Select the folder and press `Generate`. If a prompt appears asking if you wish to overwrite, press `Yes`. Allow the tool to run and do its work. Once it is done, it will offer you the option to zip the output. say "Yes" and let it zip the folder. Once it has finished zipping it will say "All Done!" and you can the close the program.
 
@@ -66,7 +66,7 @@ Navigate to where your xLodgen output folder is and create a zip folder of it if
 ### TexGen
 Run TexGenx64 and Allow the tool to load your mods and then choose the following settings. **If you are doing grass lods, tick the grass checkbox.** Note the output path as to where TexGen is sending the output.
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/TexGenSettings.webp)
+![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/TexGenSettings.webp)
 
 Press `Start` and allow the tool to generate the textures. Once done, the tool will open a pop-up. Press `Exit` or `Zip&Exit` if you wish to have the output zipped up for easier addition to a mod-manager or redistribution. In this case, we're choosing `Zip&Exit` as that allows us to add the output as a new mod in MO2 easier. Add the output as a new mod in Mod Organizer 2, and then activate it.
 
@@ -85,7 +85,7 @@ Save the .ini file and reopen MO2.
 
 Ensure that your xLodGen and TexGen outputs are active. Run DynDOLODx64 and allow it to load all your mods. In the top left section where it lists worldspaces, right click and press select all. Load the relevant rules that you want, in this case we’ll load medium rules. Set your settings to be the same as this:
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLODSettings.webp)
+![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/DynDOLODSettings.webp)
 
 Another note on settings. Billboard brightness is one that you adjust if you find that your lods are too bright in game. I have this set lower due to some of the tree mods I use. Ultra trees generates 3D tree lod and can be performance-intensive depending on the tree mods you use. However, Ultra Tree lods do get unloaded wheras the hybrid lods do not. I personally recommend using 3D tree lod as the visual quality difference is substantial for a minor perforamnce defecit. Anything above `1024` on tile size billboard is not recommended as you are beyond the threshold of visual quality to performance. And finally, the rules govern how DynDOLOD will generate things and at what quality. 
 
@@ -126,15 +126,15 @@ For the No Grass in Objects pre-cacher, place the plugin in the `plugins` folder
 ### Pre Generation Script & INI file setup
 Before running grass cache, I recommend you use this script [here](https://www.nexusmods.com/skyrimspecialedition/mods/55152) to determine which locations to cache grass into. Download that script, save the zip file somewhere safe, and copy the file that ends ".pas" into your xEdit edit scripts folder as shown below:
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/GrassScriptPlacement.webp)
+![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/GrassScriptPlacement.webp)
 
 Open xEdit, allow all your plugins to load, and then apply the script. This process can take a while so grab a coffee. Once completed, a textbox will show on screen with the list of worldspaces to generate grass for. 
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/GrassScriptOutput.webp)
+![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/GrassScriptOutput.webp)
 
 Copy this data and then Go into your `No Grass In Objects` mod, open the INI file, and paste the data in between the "" in the `OnlyPregenerateWorldSpaces =` section. It is **vital** this data is in between the quotes, otherwise it will not be read. You can see an example of how it should look below:
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/NGIOIni.webp)
+![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/NGIOIni.webp)
 
 Staying in the ini file, change the following lines to read the following:
 
@@ -152,15 +152,15 @@ Any grass records that has no object bounds set will not generate anything durin
 
 Firstly, open xEdit and filter your entire load order for grass records as shown in the picture below:
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/FilterGrassRecs.webp)
+![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/FilterGrassRecs.webp)
 
 Once the filter has finished applying, copy every record that is shown into a new esp flagged esl plugin. Name it something like "Grass Bounds Data" and save it. Your plugin should only contain similar to what is below:
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/GrassRecsPatch.webp)
+![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/GrassRecsPatch.webp)
 
 Close xEdit and then open up the Creation Kit. Load your newly created grass plugin, click on `Grass` in the object window and highlight all the grass, right click and then select `Recalculate Bounds`.
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/RecalcBoundsCK.webp)
+![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/RecalcBoundsCK.webp)
 
 Save the plugin and then exit the CK. Place the new plugin below all of your grass plugin and ensure it is active.
 
