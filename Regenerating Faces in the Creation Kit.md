@@ -20,7 +20,7 @@ To effectively generate facegen, you will need the following items:
 5. [Synthesis](https://github.com/Mutagen-Modding/Synthesis/releases)
 6. [Unofficial Creation Kit Patch](https://www.nexusmods.com/skyrimspecialedition/mods/41195) (optional)
 7. [Cathedral Asset Optimizer](https://www.nexusmods.com/skyrimspecialedition/mods/23316)
-8. [My Custom BSA Packer CAO Profile]() (optional but highly recommended)
+8. [My Custom BSA Packer CAO Profile](https://github.com/The-Animonculory/Modding-Resources/blob/main/BSA%20Creation.7z?raw=true) (optional but highly recommended)
 
 It is recommended that you have some updated textures for NPC's such as [Tempered Skins](https://www.nexusmods.com/skyrimspecialedition/mods/7902) and [Reverie Skin](https://www.nexusmods.com/skyrimspecialedition/mods/64314) and upscaled/reworked warpaint. 
 
