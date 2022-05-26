@@ -57,7 +57,7 @@ Press the `Generate` button and allow xLodGen to run and do its work. When compl
 
 Navigate to where you have installed the ACMOS road gen tool and open the program. You will greeted by a screen similar to the one below: 
 
-[alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/ACMOSRoadGen.webp)
+![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/ACMOSRoadGen.webp)
 
 Click `browse` and navigate to where your xLodgen output folder is. Select the folder and press `Generate`. If a prompt appears asking if you wish to overwrite, press `Yes`. Allow the tool to run and do its work. Once it is done, it will offer you the option to zip the output. say "Yes" and let it zip the folder. Once it has finished zipping it will say "All Done!" and you can the close the program.
 
