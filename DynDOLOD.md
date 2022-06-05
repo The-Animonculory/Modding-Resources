@@ -47,7 +47,7 @@ Then select xLodGenx64 from the executables dropdown in MO2 and press `Run`. It 
 
 ![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/xLodGenSettings.webp)
 
-Right click in the `Worldspace` area and press `Select All`. Ensure that only Terrain Lod is selected and then apply your Lod settings. I use custom lod settings for Lod4 to Lod16 which deliver the best performance to quality ratio. For Lod32, you **must** use the ACMOS settings which are shown in the picture below:
+Right click in the `Worldspace` area and press `Select All`. Ensure that only Terrain Lod is selected and then apply your Lod settings. I use custom lod settings for Lod4 to Lod16 which deliver the best performance to quality ratio [which can be found here](https://github.com/chri3i/Performance-LODs-for-SkyrimSE). For Lod32, you **must** use the ACMOS settings which are shown in the picture below:
 
 ![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/ACMOSxLodSettings.webp)
 
