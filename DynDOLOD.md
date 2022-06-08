@@ -3,7 +3,7 @@
 ## Intro
 So you’ve got your modlist all nice and ready and are now onto the process of creating lods for your game. But how do I do them, and how do I make sure my shows my updated trees and terrain?
 
-Well, you’re in luck as this guide goes over how to do it. We’ll not be covering all the settings, rather just how to run it and what you’ll need to run it. We also cover A Clear Map of Skyrim settings and how to get a pretty map using the latest version. Grass Lods are covered in a [seperate guide] as they are a bit more complex. If you are wanting to use grass lods, please follow this guide up to the [TexGen](https://github.com/The-Animonculory/Modding-Resources/blob/main/DynDOLOD.md#texgen) section and then use the additional grass lods guide.
+Well, you’re in luck as this guide goes over how to do it. We’ll not be covering all the settings, rather just how to run it and what you’ll need to run it. We also cover A Clear Map of Skyrim settings and how to get a pretty map using the latest version. Grass Lods are covered in a [seperate guide](https://github.com/The-Animonculory/Modding-Resources/blob/main/Grass%20Lods.md) as they are a bit more complex. If you are wanting to use grass lods, please follow this guide up to the [TexGen](https://github.com/The-Animonculory/Modding-Resources/blob/main/DynDOLOD.md#texgen) section and then use the additional grass lods guide.
 
 **Note: This guide is only for Mod Organizer 2 users.**
 
@@ -62,6 +62,8 @@ Navigate to where you have installed the ACMOS road gen tool and open the progra
 Click `browse` and navigate to where your xLodgen output folder is. Select the folder and press `Generate`. If a prompt appears asking if you wish to overwrite, press `Yes`. Allow the tool to run and do its work. Once it is done, it will offer you the option to zip the output. say "Yes" and let it zip the folder. Once it has finished zipping it will say "All Done!" and you can the close the program.
 
 Navigate to where your xLodgen output folder is and create a zip folder of it if it is not zipped. Press the `Add mod from file` button and navigate to where your zipped xLodGen output is. Press the `open` button and install it as a new mod. Activate the mod and then deactivate `SSE-Terrain-Tamriel` and any other mods that you activated for the xLodGen process.
+
+If you are generating grass lods, now is the time to start following [our guide on the process](https://github.com/The-Animonculory/Modding-Resources/blob/main/Grass%20Lods.md).
 
 ### TexGen
 Run TexGenx64 and Allow the tool to load your mods and then choose the following settings. Note the output path as to where TexGen is sending the output.
