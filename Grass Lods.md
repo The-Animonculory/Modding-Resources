@@ -36,7 +36,7 @@ I **highly** recommend creating a seperate profile in MO2 which just contains yo
 
 As of making this guide, .Net Framework is **NOT** compatible with this version of SSE. This means that you either need to do one of the following.
 
-- If you are running a lite modlist with very few worldspace changing mods, I have created a Wabbajack installer which is set up ready for generation. This uses the Stock game feature to preserve the integrity of your base game installation. You only need to add the mods you are using to it and resolve any major conlficts that are present. 
+- If you are running a lite modlist with very few worldspace changing mods, I have created a [Wabbajack installer](https://github.com/The-Animonculory/Modding-Resources/blob/main/Grass%20Cache%20Gen.wabbajack?raw=true) which is set up ready for generation. This uses the Stock game feature to preserve the integrity of your base game installation. You only need to add the mods you are using to it and resolve any major conlficts that are present. 
 
 - If you modlist is a bit more complicated, then you will need to create a backup of your modlist and then use the [Unoffical Skyrim Downloader](https://www.nexusmods.com/skyrimspecialedition/mods/61756) to create a **BEST OF BOTH WORLDS** downgraded version of Skyrim. A fully downgraded version **WILL NOT** work with this. Please use the previous set up. I **STRONGLY** recommend using the Stock Game format for this to preserve the integrity of your base game installation. You can read more about how to set-up [in this guide](https://github.com/The-Animonculory/Modding-Resources/blob/main/Stock%20Game%20Setup.md).
 
