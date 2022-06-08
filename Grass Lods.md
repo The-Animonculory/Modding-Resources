@@ -8,6 +8,8 @@ The following guide is **not** for beginners and must be followed to the letter.
 
 Grass lods are a new technology that allow for you to use a generated cache of grass data to increase visual fidelity and grass draw distance. Through the use of DynDOLOD and Grass cache fixes, this technology can now be used on both V1.5.97 and V1.6.xx of Skyrim Special Edition (SSE).
 
+Prior to beginning this guide, you should have a freshly generated xLodGen output. Please follow the [main DynDOLOD guide](https://github.com/The-Animonculory/Modding-Resources/blob/main/DynDOLOD.md) up until the point it says to come back to this guide.
+
 ## Initial setup
 
 Due to the .Net framework not being compatible with SSE builds newer than 1.5.97, there are different set up instructions depending on your game version.
@@ -138,7 +140,7 @@ To get GCF working correctly with our new grass cache, complete the following.
 
 Run TexGenx64 and Allow the tool to load your mods and then set your lod settings as you wish. Note the output path as to where TexGen is sending the output.
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/TexGenSettings.webp)
+![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/GLDTXGN.webp)
 
 Ensure that `Grass` checkbox is checked and that the `Texture size Min` is set to `32`. Not setting this to 32 will result in no grass billboards being created.
 
@@ -159,7 +161,7 @@ Save the .ini file and reopen MO2.
 
 Ensure that your xLodGen and TexGen outputs are active. Run DynDOLODx64 and allow it to load all your mods. In the top left section where it lists worldspaces, right click and press select all. Load the relevant rules that you want, in this case we’ll load medium rules. Ensure that the `Grass Lod` checkbox is checked and it is set to `Mode 1` and then pick your preferred lod settings. Once you have set them, it should look similar to this.
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/DynDOLODSettings.webp)
+![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/GLDDLD.webp)
 
 Another note on settings. Billboard brightness is one that you adjust if you find that your lods are too bright in game. I have this set lower due to some of the tree mods I use. Ultra trees generates 3D tree lod and can be performance-intensive depending on the tree mods you use. However, Ultra Tree lods do get unloaded wheras the hybrid lods do not. I personally recommend using 3D tree lod as the visual quality difference is substantial for a minor perforamnce defecit. Anything above `1024` on tile size billboard is not recommended as you are beyond the threshold of visual quality to performance. And finally, the rules govern how DynDOLOD will generate things and at what quality. 
 
