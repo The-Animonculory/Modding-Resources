@@ -3,7 +3,7 @@
 ## Intro
 So you’ve got your modlist all nice and ready and are now onto the process of creating lods for your game. But how do I do them, and how do I make sure my shows my updated trees and terrain?
 
-Well, you’re in luck as this guide goes over how to do it. We’ll not be covering all the settings, rather just how to run it and what you’ll need to run it. We also cover A Clear Map of Skyrim settings and how to get a pretty map using the latest version. Grass Lods are covered, however these **only work on Skyrim version 1.5.97**.
+Well, you’re in luck as this guide goes over how to do it. We’ll not be covering all the settings, rather just how to run it and what you’ll need to run it. We also cover A Clear Map of Skyrim settings and how to get a pretty map using the latest version. Grass Lods are covered in a [seperate guide] as they are a bit more complex. If you are wanting to use grass lods, please follow this guide up to the [TexGen](https://github.com/The-Animonculory/Modding-Resources/blob/main/DynDOLOD.md#texgen) section and then use the additional grass lods guide.
 
 **Note: This guide is only for Mod Organizer 2 users.**
 
@@ -64,7 +64,7 @@ Click `browse` and navigate to where your xLodgen output folder is. Select the f
 Navigate to where your xLodgen output folder is and create a zip folder of it if it is not zipped. Press the `Add mod from file` button and navigate to where your zipped xLodGen output is. Press the `open` button and install it as a new mod. Activate the mod and then deactivate `SSE-Terrain-Tamriel` and any other mods that you activated for the xLodGen process.
 
 ### TexGen
-Run TexGenx64 and Allow the tool to load your mods and then choose the following settings. **If you are doing grass lods, tick the grass checkbox.** Note the output path as to where TexGen is sending the output.
+Run TexGenx64 and Allow the tool to load your mods and then choose the following settings. Note the output path as to where TexGen is sending the output.
 
 ![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/TexGenSettings.webp)
 
@@ -108,76 +108,3 @@ To have seasonal xLodGen output, tick the seasons checkbox in the bottom left an
 ### DynDOLOD Seasonal
 
 To have seasonal DynDOLOD output, tick the Seasons checkbox, the snow checkbox, and then select the seasons you wish to have DynDOLOD for. **Note: This will take a lot longer than normal non seasonal generation.**
-
-## Grass Cache
-
-**NOTE**: Grass cache **does not function** on builds using a Skyrim.exe **newer than 1.5.97** due to .Net Script framework being incompatible.
-
-Grass Cache is a relatively new technology that allows you to pre-cache grass for all worldspaces in the game. This allows for DynDOLOD to create grass lods to increase the distance which you can see grass and also can give a more stable experience. **Do Note this can hurt your performance if set incorrectly**. 
-
-### Required files
-- [.NET Script Framework](https://www.nexusmods.com/skyrimspecialedition/mods/21294) (**ONLY WORKS ON SKYRIM 1.5.97**)
-- [No Grass In Objects](https://www.nexusmods.com/skyrimspecialedition/mods/42161) (**ONLY WORKS ON SKYRIM 1.5.97**)  
-- [Landscape Fixes for Grass Mods](https://www.nexusmods.com/skyrimspecialedition/mods/9005)
-- [Worldspaces with Grass SSEEdit Script](https://www.nexusmods.com/skyrimspecialedition/mods/55152)
-
-For the No Grass in Objects pre-cacher, place the plugin in the `plugins` folder of where your Mod Organizer 2 is installed. Relaunch MO2 and it will appear in the tools area (Shown as a spanner and screwdriver).
-
-### Pre Generation Script & INI file setup
-Before running grass cache, I recommend you use this script [here](https://www.nexusmods.com/skyrimspecialedition/mods/55152) to determine which locations to cache grass into. Download that script, save the zip file somewhere safe, and copy the file that ends ".pas" into your xEdit edit scripts folder as shown below:
-
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/GrassScriptPlacement.webp)
-
-Open xEdit, allow all your plugins to load, and then apply the script. This process can take a while so grab a coffee. Once completed, a textbox will show on screen with the list of worldspaces to generate grass for. 
-
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/GrassScriptOutput.webp)
-
-Copy this data and then Go into your `No Grass In Objects` mod, open the INI file, and paste the data in between the "" in the `OnlyPregenerateWorldSpaces =` section. It is **vital** this data is in between the quotes, otherwise it will not be read. You can see an example of how it should look below:
-
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/NGIOIni.webp)
-
-Staying in the ini file, change the following lines to read the following:
-
-- `UseGrassCache = True`  
-- `OverwriteGrassDistance = 12000`  
-- `OverwriteGrassFadeRange = 8000`  
-`OnlyLoadFromCache = True`  
-- `DynDOLODGrassMode = 1`  
-
-A note on these settings: to improve performance, you can set the `OverWriteGrassDistance` and `OverwriteGrassFadeRange` to be lower. For the former, a setting of 8000 is a bit more than vanilla and may improve your performance. If you just wish to cache the grass but not for DynDOLDOD, change the `DynDOLODGrassMode` back to `=0`. `SuperDenseMode` is another section that you can alter if you wish to tone down the grass amount. I leave this set at `7` as it gives a good balance of performance to visuals; however, setting this to `6` can help improve performance.
-
-### Bounds Data Recalculation
-
-Any grass records that has no object bounds set will not generate anything during grass pre-caching. To ensure that grass has object bounds data, the following should be completed.
-
-Firstly, open xEdit and filter your entire load order for grass records as shown in the picture below:
-
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/FilterGrassRecs.webp)
-
-Once the filter has finished applying, copy every record that is shown into a new esp flagged esl plugin. Name it something like "Grass Bounds Data" and save it. Your plugin should only contain similar to what is below:
-
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/GrassRecsPatch.webp)
-
-Close xEdit and then open up the Creation Kit. Load your newly created grass plugin, click on `Grass` in the object window and highlight all the grass, right click and then select `Recalculate Bounds`.
-
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/RecalcBoundsCK.webp)
-
-Save the plugin and then exit the CK. Place the new plugin below all of your grass plugin and ensure it is active.
-
-### Running Grass Cache
-
-Grass cache will take a long time and may take several hours depending on the number of additional worldspaces you have. To increase the speed of the regeneration, there are a few things that you can try.
-
-1. Reduce the resolution of the game so it is just big enough to still se the procress in the console. **Do not use BETHINI Poor of Low presets**, these will cause no grass files to be generated.
-2. Deactivate any **non grass** texture replacement mods you have installed.
-3. Should you wish to, you can create a new MO2 profile that only contains plugins that alter the worldspace and grass files. This will take a lot of trial and error and time, but could result in an overall quicker generation. Things to look out for in files/plugins would be edits to landscape records and stuff that adds/moves buildings and other objects such as town overhauls.
-
-Once you have done all of the above, click on the spanner and screwdriver icon, and then select `PreCache Grass`. A pop-up will appear confirming that you wish to do this. Click `Yes`. Go grab a coffee and a good book or magazine - this can take a very long time.
-
-Once it is completed, a pop-up will appear saying that grass generation has been completed. **If you do not have a mod set to catch files generated during gameplay, the grass will be in the `overwrite` mod at the bottom of your Mod Oragnizer's left pane (assuming you have the mods sorted by `Priority`).** You should see a folder called `grass` with a load of `.cgid` files inside. Move that folder to the mod called `grass cache` that you created. Press `F5` to refresh MO2 and then activate the mod.
-
-### Grass Lod creation
-
-To create grass lods, you need to have grass billboards which are created by Texgen. Follow the TexGen section but tick the `Grass` checkbox, and set the `Texture min Size` to 32. Allow TexGen to run and then save the output.
-
-For DynDOLOD, follow the settings given however tick the `Grass Lod` checbox and ensure it is set to `Mode 1`. This will take considerably longer to create and requires a large pagefile to complete efficiently.
