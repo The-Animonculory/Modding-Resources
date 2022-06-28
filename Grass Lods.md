@@ -171,6 +171,8 @@ DynDOLOD 3.0 now includes Occlusion as part of it's toolset so we no longer need
 
 Once you have configured the settings how you wish, click `OK` and DynDOLOD will begin its generation. This can take a very long time depending on how many worldspaces you have, as well as your system specifications. Once it is completed, a pop-up will appear. As with TexGen, you have the option to either `Save&Exit` or `Save&Zip&Exit`. Again, the choice is yours however in this guide we'll choose to zip it up as well.
 
+**Note**: I **strongly** recommend choosing `Save&Exit` compared to `Save&Zip&Exit` if you are going to be uploading your lods to somewhere for others to download. You should compress the output using 7zip and the `7z` format on `ultra` compression settings. It will make a **considerable** difference.
+
 Add the zipped output file as a new mod in MO2, name it `DynDOLOD Output` and activate the mod. On the right pane, `DynDOLOD.esm` should be moved to be the last ESM after your worldspace mods. In my case, that is Wyrmstooth so I place it after `Wyrmstooth.esm`. `DynDOLOD.esp` should be the second last and `Occlusion.esp` shoud be the last plugin in your load order.
 
 ### Setting the game to load the grass cache
