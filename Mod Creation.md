@@ -76,6 +76,7 @@
 - Refresh MO2, and voila.
 - ![image](https://user-images.githubusercontent.com/92814468/179336621-40eedb70-6671-4b3a-abef-241976c11e52.png)
 
+# Everything else below is 100% a WIP
 
 #### IF going to use Visual Studio Code, skip NotePad++. 
 ### NotePad++
