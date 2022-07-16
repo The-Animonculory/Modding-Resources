@@ -1,5 +1,5 @@
 # Mod Creation
-- This guide is for those that want a clean modding and scripting environment (Skyrim Anniversary Edition). 
+- This guide is for those that want to create, manage, and troubleshoot mods (Skyrim Anniversary Edition). 
 
 
 # Table of Contents
