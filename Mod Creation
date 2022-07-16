@@ -1,7 +1,13 @@
-# Skyrim Anniversary Edition Modding (+ Scripting)
+# Mod Creation
+
+## Table of Contents
+
+
+
+## Skyrim Anniversary Edition Modding (+ Scripting)
 - This guide is for those that want a clean modding and scripting environment. 
 
-### Pre-Installation
+#### Pre-Installation
 - Get VC++ here: https://aka.ms/vs/16/release/vc_redist.x64.exe
 
 ### Install Skyrim
