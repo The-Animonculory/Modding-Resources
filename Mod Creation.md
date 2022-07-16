@@ -1,11 +1,14 @@
 # Mod Creation
+- This guide is for those that want a clean modding and scripting environment (Skyrim Anniversary Edition). 
+
 
 ## Table of Contents
+- [A](https://github.com/The-Animonculory/Modding-Resources/blob/main/DynDOLOD.md)
+- [B](https://github.com/The-Animonculory/Modding-Resources/blob/main/Regenerating%20Faces%20in%20the%20Creation%20Kit.md)
+- [C](https://github.com/The-Animonculory/Modding-Resources/blob/main/Stock%20Game%20Setup.md)
+- [D](https://github.com/The-Animonculory/Modding-Resources/blob/main/Mod%20Creation.md)
 
 
-
-## Skyrim Anniversary Edition Modding (+ Scripting)
-- This guide is for those that want a clean modding and scripting environment. 
 
 #### Pre-Installation
 - Get VC++ here: https://aka.ms/vs/16/release/vc_redist.x64.exe
