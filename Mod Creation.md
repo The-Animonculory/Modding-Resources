@@ -1,6 +1,6 @@
 # Mod Creation
 - This guide is for those that want to create, manage, and troubleshoot mods (Skyrim Anniversary Edition). 
-
+- Also, this page is a WIP as this comes from my personal repo.
 
 # Table of Contents
 - [A](https://github.com/The-Animonculory/Modding-Resources/blob/main/DynDOLOD.md)
