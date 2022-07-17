@@ -33,7 +33,6 @@
 - Download `SSE Creation Kit Fixes Update` https://www.nexusmods.com/skyrimspecialedition/mods/71371 and add it to your `SkyrimFresh` folder.
 - Download `Tweaked Creation Kit ini` https://www.nexusmods.com/skyrimspecialedition/mods/19817 and add it to your `SkyrimFresh` folder. 
  - Note: Only get `CK Custom ini`. 
-- Download `FonixData.cdf` https://www.nexusmods.com/newvegas/mods/61248/ and add it to your `SkyrimFresh` folder. 
 
 ### Download SKSE
 - Get the one for Anniversary Edition https://skse.silverlock.org/ and add it to your `SkyrimFresh` folder. Extract it in there. 
@@ -75,6 +74,9 @@
 - ![image](https://user-images.githubusercontent.com/92814468/179336537-54735f55-dab7-48a4-b98e-7fb109d51a63.png)
 - Refresh MO2, and voila.
 - ![image](https://user-images.githubusercontent.com/92814468/179336621-40eedb70-6671-4b3a-abef-241976c11e52.png)
+
+### Install FonixData Lip Sync
+- Download `FonixData File Mod Manager Install` using MO2: https://www.nexusmods.com/skyrimspecialedition/mods/40971?tab=files
 
 # Everything else below is 100% a WIP
 
