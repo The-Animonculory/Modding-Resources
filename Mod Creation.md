@@ -56,6 +56,7 @@
 - Change theme to 1809 Dark Mode. Because *eyes*. Press OK.
 - Press `Edit...`
   - ![image](https://user-images.githubusercontent.com/92814468/179651311-c7b7af5d-e077-4cf9-996d-31ad7fd6569d.png)
+  - Go to where Creation Kit is.
   - Check the box for `Overwrite Steam AppID` and add `1946180` in the field.
 
 
