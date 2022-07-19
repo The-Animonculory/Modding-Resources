@@ -77,6 +77,9 @@
 ### Install via MO2
 - Download `FonixData File Mod Manager Install` https://www.nexusmods.com/skyrimspecialedition/mods/40971?tab=files
 - Download `Address Library` https://www.nexusmods.com/skyrimspecialedition/mods/32444?tab=files
+- Download `Engine Fixes` https://www.nexusmods.com/skyrimspecialedition/mods/17230?tab=files
+  - Part 1 via MO2.
+  - Part 2 goes into `Stock Game`. 
 - Download `Console Commands Extender` https://www.nexusmods.com/skyrimspecialedition/mods/28210
 - Download `ConsoleUtilSSE` https://www.nexusmods.com/skyrimspecialedition/mods/24858?tab=files
 - Download `More Informative Console` https://www.nexusmods.com/skyrimspecialedition/mods/19250?tab=files
