@@ -91,26 +91,8 @@
 - Download `More Informative Console` https://www.nexusmods.com/skyrimspecialedition/mods/19250?tab=files
 
 
-
-
-
-
 # Everything else below is 100% a WIP
-
-#### IF going to use Visual Studio Code, skip NotePad++. 
-### NotePad++
-- Get v7.4.2 of Notepad++ http://download.notepad-plus-plus.org/repository/7.x/7.4.2/ Disable auto-update. (Select Don't use AppData)
-- Install Papyrus++ https://www.nexusmods.com/skyrim/mods/64895/?tab=files
-- Open Notepad++
-- Copypaste Autocomplete  https://gist.githubusercontent.com/st4rdog/3470de541941d3e9b5b1/raw/02be3fa5e622535243b02e34cacdd7e79f2421e5/papyrus.xml into a new notepad file. Save as 'Papyrus.xml'  into Notepad++\plugins\APIs folder. 
-- ScriptCompile.bat, edit this in Skyrim directory > Papyrus Compiler. Save.
-``cd %2
-"%~dp0PapyrusCompiler" %1 -f="TESV_Papyrus_Flags.flg" -i="%~dp0..\Data\Scripts\Source" -o="%~dp0..\Data\Scripts"
-pause``
-- Press F5 (Run) in Notepad++. Paste this, but modify to your liking. WITH QUOTES. Press SAVE (shortcut can be CTRL F5), not Run. And then Cancel.
-``"D:\Games\steamapps\common\Skyrim Special Edition\Papyrus Compiler\ScriptCompile.bat" "$(FILE_NAME)" "$(CURRENT_DIRECTORY)"``
-- It's important that you add your mod's Source folder into Plugins > Papyrus++ > Settings > Import directories. 
-
+## Scripting for Mod Authoring
 ### Visual Studio Code (if not using NotePad++)
 - Download here: https://code.visualstudio.com/
 - You can choose a different directory to install it in.
@@ -150,6 +132,30 @@ pause``
 - Set up your debugging: when you have one of your mod's scripts open, click on ![Papyrus](https://cdn.discordapp.com/attachments/803257955029352518/931574029217828884/6b41099efb62089166a1ca330feea893.png). And then the play button ![Papyrus](https://cdn.discordapp.com/attachments/803257955029352518/931574329651654757/5abfe5c1dd4544dad433ba9ce44157cb.png). Select Install SKSE Plugin. Go to MO2, refresh, and enable Papyrus Debug Extension.
 - When you test things in-game, it's SKSE you need to choose. 
 - If you are in-game and want to see debug logs, you will need to press that play button. An indication of a successful connection looks like this: ![Papyrus](https://cdn.discordapp.com/attachments/803257955029352518/931575185218367588/38573e2b0313caf79bceae9a624252cd.png). If you don't see your debug console, hit View > Debug Console.
+
+
+
+## Scripting for Modlists
+Use this section if the modlist does not come with a scripting environment. Uses Notepad++.
+
+
+
+
+#### IF going to use Visual Studio Code, skip NotePad++. 
+### NotePad++
+- Get v7.4.2 of Notepad++ http://download.notepad-plus-plus.org/repository/7.x/7.4.2/ Disable auto-update. (Select Don't use AppData)
+- Install Papyrus++ https://www.nexusmods.com/skyrim/mods/64895/?tab=files
+- Open Notepad++
+- Copypaste Autocomplete  https://gist.githubusercontent.com/st4rdog/3470de541941d3e9b5b1/raw/02be3fa5e622535243b02e34cacdd7e79f2421e5/papyrus.xml into a new notepad file. Save as 'Papyrus.xml'  into Notepad++\plugins\APIs folder. 
+- ScriptCompile.bat, edit this in Skyrim directory > Papyrus Compiler. Save.
+``cd %2
+"%~dp0PapyrusCompiler" %1 -f="TESV_Papyrus_Flags.flg" -i="%~dp0..\Data\Scripts\Source" -o="%~dp0..\Data\Scripts"
+pause``
+- Press F5 (Run) in Notepad++. Paste this, but modify to your liking. WITH QUOTES. Press SAVE (shortcut can be CTRL F5), not Run. And then Cancel.
+``"D:\Games\steamapps\common\Skyrim Special Edition\Papyrus Compiler\ScriptCompile.bat" "$(FILE_NAME)" "$(CURRENT_DIRECTORY)"``
+- It's important that you add your mod's Source folder into Plugins > Papyrus++ > Settings > Import directories. 
+
+
 
 
 ### Needs to be updated, ignore for now
