@@ -35,7 +35,7 @@
  - Note: Only get `CK Custom ini`. 
 
 ### Download SKSE
-- Get the one for Anniversary Edition https://skse.silverlock.org/ and add it to your `SkyrimFresh` folder. Extract it in there. 
+- Get the one for Anniversary Edition https://skse.silverlock.org/ and add it to your `SkyrimFresh` folder. Extract it in there, delete the .zip.
 - Open the contents of that new skse folder until you see `src`, `data`, etc. Inside the `Data` folder, you will find a `Scripts` folder with more contents. Right-click `Scripts` and zip it. Name it ``SKSEScripts.zip`` and move that to your ``SkyrimFresh`` folder.
 
 ### Install MO2
@@ -60,7 +60,6 @@
 - Open the skse folder. Copy the skse dll, skse loader.exe, skse steam loader.dll into the `Stock Game` folder.
 - Open the `CK64Fixes Release` folder. Copy all contents and paste into the `Stock Game` folder.
 - Open the `SSE Creation Kit Fixes Update` folder. Copy all contents and paste into the `Stock Game` folder. Replace the files.
-- Create a new folder in `Stock Game/Data` named `Sound`. Inside it, create a new folder named `Voice`. Open the `FonixData` folder in `SkyrimFresh` and drag `Processing` into `Voice`.
 - Open `FaceFXWrapper`. Drag `Tools` into `Stock Game`.
 - Copy `CreationKitCustom.ini` and paste into `Stock Game`.
 
