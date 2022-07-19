@@ -137,8 +137,7 @@
 
 ## Scripting for Modlists
 Use this section if the modlist does not come with a scripting environment. Uses Notepad++.
-
-
+- Get PCA 
 
 
 #### IF going to use Visual Studio Code, skip NotePad++. 
