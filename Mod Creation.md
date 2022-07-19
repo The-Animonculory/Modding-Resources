@@ -54,6 +54,10 @@
 - Press `Next`, finish that install.
 - Go to `Tools > Settings > Theme` in MO2.
 - Change theme to 1809 Dark Mode. Because *eyes*. Press OK.
+- Press `Edit...`
+  - ![image](https://user-images.githubusercontent.com/92814468/179651311-c7b7af5d-e077-4cf9-996d-31ad7fd6569d.png)
+  - Check the box for `Overwrite Steam AppID` and add `1946180` in the field.
+
 
 ### SkyrimFresh Folder
 - Drag `CKScripts.zip` and `SKSEScripts.zip` into the Downloads tab in MO2, and install both. Place these after the DLCs and Creation Club content, and before any mods you make. `CKScripts` go before `SKSEScripts`.
