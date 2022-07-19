@@ -32,7 +32,7 @@
 - Download `SSE CreationKitFixes` and `FaceFXwrapper` https://www.nexusmods.com/skyrimspecialedition/mods/20061 and add them to your `SkyrimFresh` folder.
 - Download `SSE Creation Kit Fixes Update` https://www.nexusmods.com/skyrimspecialedition/mods/71371 and add it to your `SkyrimFresh` folder.
 - Download `Tweaked Creation Kit ini` https://www.nexusmods.com/skyrimspecialedition/mods/19817 and add it to your `SkyrimFresh` folder. 
- - Note: Only get `CK Custom ini`. 
+  - Note: Only get `CK Custom ini`. 
 
 ### Download SKSE
 - Get the one for Anniversary Edition https://skse.silverlock.org/ and add it to your `SkyrimFresh` folder. Extract it in there, delete the .zip.
@@ -74,8 +74,17 @@
 - Refresh MO2, and voila.
 - ![image](https://user-images.githubusercontent.com/92814468/179336621-40eedb70-6671-4b3a-abef-241976c11e52.png)
 
-### Install FonixData Lip Sync
-- Download `FonixData File Mod Manager Install` using MO2: https://www.nexusmods.com/skyrimspecialedition/mods/40971?tab=files
+### Install via MO2
+- Download `FonixData File Mod Manager Install` https://www.nexusmods.com/skyrimspecialedition/mods/40971?tab=files
+- Download `Address Library` https://www.nexusmods.com/skyrimspecialedition/mods/32444?tab=files
+- Download `Console Commands Extender` https://www.nexusmods.com/skyrimspecialedition/mods/28210
+- Download `ConsoleUtilSSE` https://www.nexusmods.com/skyrimspecialedition/mods/24858?tab=files
+- Download `More Informative Console` https://www.nexusmods.com/skyrimspecialedition/mods/19250?tab=files
+
+
+
+
+
 
 # Everything else below is 100% a WIP
 
