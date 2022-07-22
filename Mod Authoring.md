@@ -1,5 +1,6 @@
 # Mod Authoring
 - The CK part NEEDS to be updated (Check ADT - That CK version is MUCH faster)
+- Notes for Anna: Just change Stock Game wording to Root
 - This guide is intended to help you set up a mod authoring environment with Skyrim Anniversary Edition.
 - You'll see some similarities with this [Stock Game Setup](https://github.com/The-Animonculory/Modding-Resources/blob/main/Stock%20Game%20Setup.md) guide by Al, but that's mostly for modlist curation (Wabbajack).
 - Also, this page is a WIP as this comes from my personal repo.
