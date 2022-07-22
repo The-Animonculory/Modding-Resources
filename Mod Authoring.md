@@ -1,4 +1,4 @@
-# Mod Authoring
+# Mod Authoring - WIP, please check ADT 
 - The CK part NEEDS to be updated (Check ADT - That CK version is MUCH faster)
 - Notes for Anna: Just change Stock Game wording to Root
 - This guide is intended to help you set up a mod authoring environment with Skyrim Anniversary Edition.
