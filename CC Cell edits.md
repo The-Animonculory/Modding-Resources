@@ -1,3 +1,5 @@
+# Editing cells from esl files
+
 1. ESM-flagged files are not "not persistent". Persistent and temporary records from ESM-flagged files are correctly treated as either persistent or temporary and loaded/unloaded accordingly, whereas in non-ESM flagged files, all records are treated as persistent. This is the cause of the SSE reference handle limit, when too many ESPs have too many references, when only a finite number can be loaded at any given time. If an SKSE plugin (or future game update) fixed this in order to fix the reference handle limit, the bug would affect cells in ESL-flagged files as well.
 
 2. The cell from CC Survival Mode being referenced does originate in that plugin, and it does contain temporary records, but it isn't a gameplay cell; players probably won't be traveling to it while playing, nor is it particularly likely that another mod will come along and edit the same cell and send the player to it, so as far as issues go, it should be safe to consider it benign.
@@ -13,3 +15,8 @@ The plugin contains new cell records that are overridden by another plugin in th
 The overwriting plugin is flagged as a Partial Record but contains temporary references that will not be loaded.
 
 In a load order with all of the CC content and Unofficial Patches, the Survival Mode plugin would not raise any red flags, because nothing would be overwriting its cell record. The Unofficial Myrwatch Patch would also not raise any red flags, because it correctly flags the overridden cell record as a Partial Record, and itself only contains persistent references (some edited from the original plugin, some new.)
+
+## Credits:
+
+Full credit to [shad0wshayd3](https://www.nexusmods.com/skyrimspecialedition/users/5232181) who explained that in the comment section of a random mod page.
+I just copied what they said as it may help others
