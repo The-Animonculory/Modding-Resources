@@ -72,7 +72,12 @@ If for some reason, you do not wish to use all the AE creation club content and 
 
 ### Tool Setup
 
-No special setup is needed for tools to work with Root Builder. Anything that you run from MO2 will have the files in Root built at the same as MO2 builds the virtual data folder.
+#### xEdit based tools [GOG only]
+
+Due to GOG not being natively supported with the tools yet, you have to add some arguments to get it to recognise and load the data properly. The following arguments are needed in order to get xEdit based tools to load plugins properly: 
+- `-D:"X:\GOG Galaxy\Games\Skyrim Anniversary Edition\Data"` 
+- `-I:"X:\Users\User\Documents\My Games\Skyrim Special Edition GOG\Skyrim.ini"` 
+- `-P:"X:Path\To\MO2\profiles\Profile Name [GOG]\Plugins.txt"`
 
 ## Compiling with Root Builder [For Wabbajack List Authors]
 
