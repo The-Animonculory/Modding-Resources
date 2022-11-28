@@ -62,7 +62,7 @@ SKSE is a required executable for a **lot** of Skyrim mods and as such is necess
 Engine Fixes is like SKSE in that it is very easy to setup. As before, simply copy the part 2 files into your stock game folder.
 
 ### Creation Kit
-The Creation Kit is similar in terms of ease of use. You will need the main file from [Tweaked Creation Kit Ini](https://www.nexusmods.com/skyrimspecialedition/mods/19817) and I highly recommend using [SSE Creation Kit Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/20061) & [SSE Creation Kit FonixData Lip Sync Fix](https://www.nexusmods.com/skyrimspecialedition/mods/40971) alongside the Creation Kit. To setup the Creation Kit, complete the following steps.
+The Creation Kit is similar in terms of ease of use. You will need the main file from [Tweaked Creation Kit Ini](https://www.nexusmods.com/skyrimspecialedition/mods/19817) and I highly recommend using [SSE Creation Kit Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/71371) & [SSE Creation Kit FonixData Lip Sync Fix](https://www.nexusmods.com/skyrimspecialedition/mods/40971) alongside the Creation Kit. To setup the Creation Kit, complete the following steps.
 
 1. Copy the Creation Kit.exe, CreationKit.ini & CreationKitPrefs.ini to the game root folder.
 2. Extract and copy the Tweaked ini into the game root folder.
