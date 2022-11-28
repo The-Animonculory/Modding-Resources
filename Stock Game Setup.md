@@ -94,6 +94,9 @@ The picture below shows how the ini file should look.
 
 ![Nemesis Ini](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/Stock%20Game/NemesisIni.webp)
 
+**Most Common Nemesis error:**
+Error 6002 - Add Nemesis to the Windows Defender exclusion list. If that doesn't work, run it in Win8 compatibility mode (setting by right-clicking on the Nemesis Engine.exe)
+
 ### Synthesis
 Synthesis is relatively simple to configure for Stock Game. Like Nemesis, you just need to tell it where your game data folder is. To configure Synthesis, complete the following steps.
 
