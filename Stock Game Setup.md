@@ -68,7 +68,8 @@ The Creation Kit is similar in terms of ease of use. You will need the main file
 2. Extract and copy the Tweaked ini into the game root folder.
 3. Copy the files from Creation Kit Fixes into the game root folder. If you receive a prompt to overwrite files, **do not overwrite**.
 4. Install the Lip Sync Fix mod as normal in MO2.
-5. Run the CK to test and make sure that it works.
+5. Click on your gears icon in MO2, set up the creation kit tool. There is a line below arguments that says "Overwrite Steam AppID". Tick the box and type in the 1946180 value listed below.
+6. Run the CK to test and make sure that it works.
 
 ### xEdit & xEdit based applications (DynDOLOD, xLodGen)
 xEdit and applications based off it require the addition of some arguments to ensure that they can see where the data folder is. The most important argument to add is this one `-D:"C:\Path\To\Folder\Game Root\Data"` replacing the "Path\To\Folder" with the location of your game root folder. It should similar to the pictures below.
