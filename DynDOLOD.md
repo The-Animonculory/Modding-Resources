@@ -36,9 +36,21 @@ Once you have installed and positioned DynDOLOD resources, install Unique Map Fr
 
 ![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/ACMOSInstall.webp)
 
+Once you have ACMOS installed, install FOLIP and place it just below it on the left hand side.
+
 Finally, you’ll want to install the `SSE-Terrain-Tamriel Extended` ESM. This is only needed during xLodGen and can be placed anywhere in the left pane of MO2. I tend to place it above the xLodGen Output. Once installed, activate it only when doing xLodGen and place it below the last worldspace ESM in your load order. In my case, this is `Wyrmstooth`.
   
   -  *Note: Your ESMs will all be **bold** in MO2's Plugin list, even though they may not necessary be named with an `.esm` extension.*
+
+**NOTE**: The load order towards the end of your list should be as follows:
+
+- Other late loaders such as Lux, Water For ENB, Northern Roads.
+- ACMOS
+- ACMOS Water for ENB patch
+- FOLIP
+- Synthesis
+
+***
 
 ### xLodGen
 Once you have all of that installed and the output paths set, activate `SSE-Terrain-Tamriel Extended` and move it to the correct position in the right pane as mentioned in the previous section.
@@ -52,6 +64,8 @@ Then select xLodGenx64 from the executables dropdown in MO2 and press `Run`. It 
 Right click in the `Worldspace` area and press `Select All`. Ensure that only Terrain Lod is selected and then apply your Lod settings. I use the [STEP](https://stepmodifications.org/wiki/SkyrimSE:2.2.0#Generate_terrain_LOD) settings which include the required tweaks for ACMOS.
 
 Press the `Generate` button and allow xLodGen to run and do its work. When complete, it will say “Lod Generation completed”. You can then close the program. 
+
+***
 
 ### A Clear Map of Skyrim Road Generator Tool
 
@@ -67,6 +81,8 @@ Navigate to where your xLodgen output folder is and create a zip folder of it if
 
 If you are generating grass lods, now is the time to start following [our guide on the process](https://github.com/The-Animonculory/Modding-Resources/blob/main/Grass%20Lods.md).
 
+***
+
 ### TexGen
 Run TexGenx64 and Allow the tool to load your mods and then choose the following settings. Note the output path as to where TexGen is sending the output.
 
@@ -75,6 +91,8 @@ Run TexGenx64 and Allow the tool to load your mods and then choose the following
 If you have grass that has complex data for ENB, ensure that you generate `HD Grass` and not `Grass`. Use the settings from [STEP](https://stepmodifications.org/wiki/SkyrimSE:2.2.0#Generate_terrain_LOD) which apply to your rendered game resolution. In my case, this is 1440p.
 
 Press `Start` and allow the tool to generate the textures. Once done, the tool will open a pop-up. Press `Exit` or `Zip&Exit` if you wish to have the output zipped up for easier addition to a mod-manager or redistribution. In this case, we're choosing `Zip&Exit` as that allows us to add the output as a new mod in MO2 easier. Add the output as a new mod in Mod Organizer 2, and then activate it.
+
+***
 
 ### DynDOLOD & Occlusion
 
