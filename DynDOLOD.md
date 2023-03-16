@@ -15,7 +15,9 @@ Here is a list of things you will need:
 - [DynDOLOD 3.00](https://www.nexusmods.com/skyrimspecialedition/mods/32382)  
 - [DynDOLOD 3.00 Reources](https://www.nexusmods.com/skyrimspecialedition/mods/52897)
 - [Unique Map Weather Framework](https://www.nexusmods.com/skyrimspecialedition/mods/59919) (Optional)
-- [A Clear Map of Skyrim and Other Worlds](https://www.nexusmods.com/skyrimspecialedition/mods/56367) (**BOTH FILES**)
+- [A Clear Map of Skyrim and Other Worlds](https://www.nexusmods.com/skyrimspecialedition/mods/56367)
+- [ACMOS Road Generator](https://www.nexusmods.com/skyrimspecialedition/mods/79205)
+- [Far Object LOD Improvement Project SSE](https://www.nexusmods.com/skyrimspecialedition/mods/79197)
 
 ## The Main Steps
 
@@ -41,15 +43,13 @@ Finally, you’ll want to install the `SSE-Terrain-Tamriel Extended` ESM. This i
 ### xLodGen
 Once you have all of that installed and the output paths set, activate `SSE-Terrain-Tamriel Extended` and move it to the correct position in the right pane as mentioned in the previous section.
 
-  -  *Note: Some mods such as Majestic Mountains and Cathedral Landscapes come with files for Lod Generation. You will want to have these files activated during the process of running xLodGen. Majestic Mountains Lods in particular needs to be active all the way through.*
+  -  *Note: Some mods such as Majestic landscapes and Cathedral Landscapes come with files for Lod Generation. You will want to have these files activated during the process of running xLodGen.*
 
 Then select xLodGenx64 from the executables dropdown in MO2 and press `Run`. It will proceed to load your entire load order. When it is done, a Dialogue box will open similar to the following:
 
 ![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/xLodGenSettings.webp)
 
-Right click in the `Worldspace` area and press `Select All`. Ensure that only Terrain Lod is selected and then apply your Lod settings. I use custom lod settings for Lod4 to Lod16 which deliver the best performance to quality ratio [which can be found here](https://github.com/chri3i/Performance-LODs-for-SkyrimSE). For Lod32, you **must** use the ACMOS settings which are shown in the picture below:
-
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/ACMOSxLodSettings.webp)
+Right click in the `Worldspace` area and press `Select All`. Ensure that only Terrain Lod is selected and then apply your Lod settings. I use the [STEP](https://stepmodifications.org/wiki/SkyrimSE:2.2.0#Generate_terrain_LOD) settings which include the required tweaks for ACMOS.
 
 Press the `Generate` button and allow xLodGen to run and do its work. When complete, it will say “Lod Generation completed”. You can then close the program. 
 
@@ -57,9 +57,11 @@ Press the `Generate` button and allow xLodGen to run and do its work. When compl
 
 Navigate to where you have installed the ACMOS road gen tool and open the program. You will greeted by a screen similar to the one below: 
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/ACMOSRoadGen.webp)
+![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/NewACMOSRoadGen.webp)
 
-Click `browse` and navigate to where your xLodgen output folder is. Select the folder and press `Generate`. If a prompt appears asking if you wish to overwrite, press `Yes`. Allow the tool to run and do its work. Once it is done, it will offer you the option to zip the output. say "Yes" and let it zip the folder. Once it has finished zipping it will say "All Done!" and you can the close the program.
+Ensure that `Path Only` is selected from the roads drop down section.
+
+Click `browse` and navigate to where your xLodgen output folder is. Select the folder and press `Generate`. If a prompt appears asking if you wish to overwrite, press `Yes`. Allow the tool to run and do its work. Once it is done, it will offer you the option to zip the output. Say "No" and let it zip the folder. Once it has finished zipping it will say "All Done!" and you can the close the program.
 
 Navigate to where your xLodgen output folder is and create a zip folder of it if it is not zipped. Press the `Add mod from file` button and navigate to where your zipped xLodGen output is. Press the `open` button and install it as a new mod. Activate the mod and then deactivate `SSE-Terrain-Tamriel` and any other mods that you activated for the xLodGen process.
 
@@ -68,7 +70,9 @@ If you are generating grass lods, now is the time to start following [our guide 
 ### TexGen
 Run TexGenx64 and Allow the tool to load your mods and then choose the following settings. Note the output path as to where TexGen is sending the output.
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/TexGenSettings.webp)
+![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/NewTexGenSettings.webp)
+
+If you have grass that has complex data for ENB, ensure that you generate `HD Grass` and not `Grass`. Use the settings from [STEP](https://stepmodifications.org/wiki/SkyrimSE:2.2.0#Generate_terrain_LOD) which apply to your rendered game resolution. In my case, this is 1440p.
 
 Press `Start` and allow the tool to generate the textures. Once done, the tool will open a pop-up. Press `Exit` or `Zip&Exit` if you wish to have the output zipped up for easier addition to a mod-manager or redistribution. In this case, we're choosing `Zip&Exit` as that allows us to add the output as a new mod in MO2 easier. Add the output as a new mod in Mod Organizer 2, and then activate it.
 
@@ -85,14 +89,16 @@ Save the .ini file and reopen MO2.
 
 #### Generation
 
-Ensure that your xLodGen and TexGen outputs are active. Run DynDOLODx64 and allow it to load all your mods. In the top left section where it lists worldspaces, right click and press select all. Load the relevant rules that you want, in this case we’ll load medium rules. Set your settings to be the same as this:
+**NOTE**: In this example, I am using DynDOLOD DLL NG which enables a large reference bug workaround. This is **NOT** recommended for usage unless you absolutely know what you are doing. If a list you are using includes it, then ensure that your settings match exactly what is shown in the picture below.
 
-![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/NewDynDOSettings.webp)
+Ensure that your xLodGen and TexGen outputs are active. Run DynDOLODx64 and allow it to load all your mods. In the top left section where it lists worldspaces, right click and press select all. Load the relevant rules that you want, in this case we’ll load high rules. Set your settings to be the same as this:
+
+![alt text](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/NewDynDOLODSettings.webp)
 
 Another note on settings. Billboard brightness is one that you adjust if you find that your lods are too bright in game. I have this set lower due to some of the tree mods I use. Ultra trees generates 3D tree lod and can be performance-intensive depending on the tree mods you use. However, Ultra Tree lods do get unloaded wheras the hybrid lods do not. I personally recommend using 3D tree lod as the visual quality difference is substantial for a minor perforamnce defecit. Anything above `1024` on tile size billboard is not recommended as you are beyond the threshold of visual quality to performance. And finally, the rules govern how DynDOLOD will generate things and at what quality. 
 
-  -  *Note: Certain tree mods require specialised tree rules in order for them to render properly in the worldspace. Known mods that require them include: Myrkvior, Trees Addon SE and Skyrim Flora Overhaul. It is likely there are more tree mods that require special rules. I use the following tree rules (taken from the Myrkvior DynDOLOD addon page): LOD4/Level0, LOD8/Billboard4, LOD16/Billboard(1), LOD32/Billboard(6)* 
-  - *Notes: ACMOS requires the Tree and \ rule to be edited in order to display properly. The following settings are needed: Tree-LOD32/Billboard(6); \-LOD32/Level0.*
+  -  *Note: Certain tree mods require specialised tree rules in order for them to render properly in the worldspace. Known mods that require them include: Myrkvior, Trees Addon SE, Happy Little Trees and Skyrim Flora Overhaul. It is likely there are more tree mods that require special rules. I use the following tree rules (taken from the Happy Little Tree DynDOLOD addon page): LOD4/Level0, LOD8/Billboard4, LOD16/Billboard(1), LOD32/Billboard(6).* 
+  - *Notes: ACMOS requires the Tree and \ rule to be edited in order to display properly. The following settings are needed: `Tree`: LOD32/Billboard(6); `\`: LOD32/Level0.*
 
 DynDOLOD 3.0 now includes Occlusion as part of it's toolset so we no longer need to generate Occlusion via xLodGen. I recommend the settings shown in picture above for generation as these are very similar to the original one's used in xLodGen occlusion.
 
