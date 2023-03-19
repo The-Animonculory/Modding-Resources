@@ -26,7 +26,10 @@
 - Tweak `WINDOWLIGHT`.
 
 #### How do I remove the black bars?
-- 
+
+
+#### Why are the corners of my screen dark?
+- That's the Vignette setting -- add more info here
 
 #### Why does the water look green?
 - Change the brightness in the `WATER` section. Or your water mod.
