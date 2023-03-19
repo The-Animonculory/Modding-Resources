@@ -8,11 +8,14 @@
 - First off, to tweak your ENB settings in-game, the key(s) to open up the UI will vary per ENB. By default, it's `SHIFT + ENTER`. If you've tried several combinations and still haven't opened up the UI, look for your enblocal.ini and edit what it says in KeyEditor. To check values, go here: https://css-tricks.com/snippets/javascript/javascript-keycodes/#aa-tester-tool
 <img src="https://imgur.com/eRVASB5.png" width=50%></img>
 - Also, please calibrate your monitor. http://www.lagom.nl/lcd-test/
-- Lastly, remember to save often, especially when you like the changes you just made.
+- Lastly, remember to save often, especially when you like the changes you just made. 
+  - How to save:
 
 ### Tweaks
 - When tweaking ENBs, you have your Shaders window, and your Weathers window. 
 - Certain settings will be overridden by `IgnoreWeatherSystems`.
+- Certain settings will be overriden by 
+- Basically, if you are changing the values of a field, but you are not seeing any changes: it's likely to be overridden by a setting.
 
 #### Why does hair look funny? 
 - Try to turn off/tweak `DetailedShadow` and `WETSURFACES`. Look for `ReflectionAmount` in `WETSURFACES`, if you decide not to turn it off.
