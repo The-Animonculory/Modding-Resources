@@ -2,6 +2,8 @@
 *Feel free to make suggestions or contribute.*
 
 ### Quick Notes
+- Keep `CTRL + F` by your side for this guide.
+- This guide does not show you how to install ENB.
 - Not everything here will apply to your ENB, but hey, just trying to help. ;)
 - First off, to tweak your ENB settings in-game, the key(s) to open up the UI will vary per ENB. By default, it's `SHIFT + ENTER`. If you've tried several combinations and still haven't opened up the UI, look for your enblocal.ini and edit what it says in KeyEditor. To check values, go here: https://css-tricks.com/snippets/javascript/javascript-keycodes/#aa-tester-tool
 <img src="https://imgur.com/eRVASB5.png" width=50%></img>
@@ -9,6 +11,8 @@
 - Lastly, remember to save often, especially when you like the changes you just made.
 
 ### Tweaks
+- When tweaking ENBs, you have your Shaders window, and your Weathers window. 
+- Certain settings will be overridden by `IgnoreWeatherSystems`.
 
 #### Why does hair look funny? 
 - Try to turn off/tweak `DetailedShadow` and `WETSURFACES`. Look for `ReflectionAmount` in `WETSURFACES`, if you decide not to turn it off.
