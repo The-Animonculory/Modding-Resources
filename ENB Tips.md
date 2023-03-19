@@ -25,6 +25,9 @@
 #### Why are embers so red?
 - Tweak `WINDOWLIGHT`.
 
+#### How do I remove the black bars?
+- 
+
 #### Why does the water look green?
 - Change the brightness in the `WATER` section. Or your water mod.
 
@@ -41,6 +44,13 @@
 #### How can I make the mountains brighter/darker?
 <img src="https://imgur.com/x1bbbux.png" width=50%></img>
 - Tweak `FogAmountMultiplier` and other relevant values as desired in `ENVIRONMENT`.
+
+#### The sunrays and godrays hurt my eyes!
+
+
+#### How do I make the lighting warmer/cooler?
+
+#### The sun is hitting my grass weirdly.
 
 #### How do I get that foggy look?
 <img src="https://imgur.com/kBEJUoA.png" width=50%></img>
