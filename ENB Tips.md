@@ -14,9 +14,9 @@
 
 ### Tweaks
 - When tweaking ENBs, you have your Shaders window, and your Weathers window. 
-- Certain settings will be overridden by `IgnoreWeatherSystems`.
-- Certain settings will be overriden by 
-- Basically, if you are changing the values of a field, but you are not seeing any changes: it's likely to be overridden by a setting.
+- Certain settings will be overridden by `IgnoreWeatherSystem` and `IgnoreWeatherSystemInterior`.
+
+
 
 #### Why does hair look funny? 
 - Try to turn off/tweak `DetailedShadow` and `WETSURFACES`. Look for `ReflectionAmount` in `WETSURFACES`, if you decide not to turn it off.
@@ -50,7 +50,8 @@
 - Tweak `FogAmountMultiplier` and other relevant values as desired in `ENVIRONMENT`.
 
 #### The sunrays and godrays hurt my eyes!
-
+<img src="https://imgur.com/swGG5do.png" width=70%></img>
+- Tweak `PROCEDURALSUN` and play with the `GlowIntensity` values.
 
 #### How do I make the lighting warmer/cooler?
 
