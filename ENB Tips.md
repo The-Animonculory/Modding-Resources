@@ -82,7 +82,7 @@
 - Uncheck `EnableBloom`.
 - Uncheck `EnableDepthofField`.
 - Uncheck `EnableTessellation` in `WATER`.
-- Uncheck `ComplexFireLights` and `ComplexFireLights` OR
+- Uncheck `ComplexParticleLights` and `ComplexFireLights` OR
   - Uncheck `EnableBigRange` in these two settings.
  
 #### Shiny brows? Uhh...
