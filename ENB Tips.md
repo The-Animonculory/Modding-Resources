@@ -17,17 +17,20 @@
 - Certain settings will be overridden by `IgnoreWeatherSystem` and `IgnoreWeatherSystemInterior`.
 
 
-
 #### Why does hair look funny? 
 - Try to turn off/tweak `DetailedShadow` and `WETSURFACES`. Look for `ReflectionAmount` in `WETSURFACES`, if you decide not to turn it off.
 
 ![image](https://user-images.githubusercontent.com/92814468/167032260-00ce0b1b-ff71-445b-865d-14a4f84bf73e.png)
 
+#### Why do scalps look grey?
+- You would either need to tweak `IMAGEBASEDLIGHTING` (easier) or choose a different hair mod (not preferred).
+
+
 #### Why are embers so red?
 - Tweak `WINDOWLIGHT`.
 
 #### How do I remove the black bars?
-
+- In `ENBEFFECTPOSTPASS.FX`, scroll until you see `Enable Letterbox Bars`. Uncheck this.
 
 #### Why are the corners of my screen dark?
 - That's the Vignette setting -- add more info here
