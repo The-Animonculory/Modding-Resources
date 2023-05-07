@@ -11,4 +11,4 @@ Welcome to the landing page for Animonculory modding resources.
 - [Stock Game Setup for Skyrim SE/AE](https://github.com/The-Animonculory/Modding-Resources/blob/main/Stock%20Game%20Setup.md)
 
 
-![Animonculory Logo](https://raw.githubusercontent.com/The-Animonculory/Animonculory-Visual-Overhaul/main/.github/GitHub.png)
+![Animonculory Logo](https://raw.githubusercontent.com/The-Animonculory/AnimonculoryWJLists/main/animonculory.png)
