@@ -2,11 +2,11 @@
 
 **WARNING!**
 
-The following guide is **not** for beginners and must be followed to the letter. Any deviation will result in your grass and lods becoming broken and requiring regeneration.
+The following guide is **not** for beginners and must be followed to the letter. Any deviation will result in your grass and lods becoming broken and requiring regeneration. I do not go fully into detail on certain areas. If you wish for a more in depth tutorial please, follow the [STEP tutorial](https://stepmodifications.org/wiki/SkyrimSE:Grass_LOD_Guide) of which parts of this guide are adapted from.
 
 ## Preamble
 
-Grass lods use a feature of DynDOLOD that allows for it to render grass billboard data within the visible uGRID to increase the visual fidelity and grass draw distance. Thanks to the work of DoubleYouC, this technology is availiable for usage on both 1.5.97 and 1.6.x versions of Skyrim Special Edition (SSE).
+Grass lods use a feature of DynDOLOD that allows for it to render grass billboard data within the visible uGRID to increase the visual fidelity and grass draw distance. Thanks to the work of many talented mod authors, this technology is availiable for usage on both 1.5.97 and 1.6.x versions of Skyrim Special Edition (SSE).
 
 Prior to beginning this guide, you should have a freshly generated xLodGen output. Please follow the [main DynDOLOD guide](https://github.com/The-Animonculory/Modding-Resources/blob/main/DynDOLOD.md) up until the point it says to come back to this guide.
 
@@ -25,7 +25,7 @@ As .Net Framework is natively compatible with this version, you do not need to d
 - [DynDOLOD 3.00 Reources](https://www.nexusmods.com/skyrimspecialedition/mods/52897)
 - [Landscape Fixes for Grass Mods](https://www.nexusmods.com/skyrimspecialedition/mods/9005)
 - [Worldspaces with Grass SSEEdit Script](https://www.nexusmods.com/skyrimspecialedition/mods/55152)
-- [Grass Cache Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/60891) <- **DO NOT ACTIVATE YET**
+- [Grass Cache Helper NG](https://www.nexusmods.com/skyrimspecialedition/mods/101095) <- **DO NOT ACTIVATE YET**
 
 For the No Grass in Objects pre-cacher, place the plugin in the `plugins` folder of where your Mod Organizer 2 (MO2) is installed. Relaunch MO2 and it will appear in the tools area (shown as a spanner and screwdriver).
 
@@ -33,6 +33,8 @@ For the SSEEdit Script, install this into your xEdit `edit scripts` folder like 
 ![List Worldspaces with Grass xEdit Script installed into Edit scripts folder of xEdit](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/GrassScriptPlacement.webp)
 
 I **highly** recommend creating a seperate profile in MO2 which just contains your grass and landscape editing mods alongside Engine Fixes and Bug fixes. This will take a lot of time to work out, however it does result in a much quicker generation. Filters in xEdit can be used to help find plugins which edit landscape records (town overhauls, moving buildings, new lands mods etc).
+
+***
 
 ### Set up for 1.6.xx
 
@@ -47,7 +49,7 @@ As of making this guide, .Net Framework is **NOT** compatible with this version 
 - [DynDOLOD 3.00 Reources](https://www.nexusmods.com/skyrimspecialedition/mods/52897)
 - [Landscape Fixes for Grass Mods](https://www.nexusmods.com/skyrimspecialedition/mods/9005)
 - [Worldspaces with Grass SSEEdit Script](https://www.nexusmods.com/skyrimspecialedition/mods/55152)
-- [Grass Cache Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/60891) <- **DO NOT ACTIVATE YET**
+- [Grass Cache Helper NG](https://www.nexusmods.com/skyrimspecialedition/mods/101095) <- **DO NOT ACTIVATE YET**
 
 For the SSEEdit Script, install this into your xEdit `edit scripts` folder like so:
 ![List Worldspaces with Grass xEdit Script installed into Edit scripts folder of xEdit](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/GrassScriptPlacement.webp)
@@ -64,35 +66,6 @@ For the No Grass in Objects pre-cacher, place the plugin in the `plugins` folder
 ## Grass Cache Generation
 
 Once you have got your modlist configured for grass cache generation, it is now time to create the cache which will be used in the lod generation. The steps are the same regardless of which game version (V1.5.97 or the downgraded "Best of Both Worlds" version) you are using.
-
-### Game INI file configuration
-
-Before continuing, you need to configure the game file ini's to enable the grass cache to function properly. 
-
-Set the following details in `Skyrim.ini`:
-
-```
-[Grass]
-bAllowCreateGrass=1
-bAllowLoadGrass=0
-bEnableGrassFade=0
-fGrassFadeRange=14128
-```
-
-Set the following details in `SkyrimPrefs.ini`:
-
-```
-[Grass]
-fGrassMaxStartFadeDistance=6144
-fGrassMinStartFadeDistance=0
-fGrassStartFadeDistance=6144
-
-[TerrainManager]
-fBlockLevel0Distance=57344
-fBlockLevel1Distance=147456
-fBlockMaximumDistance=327680
-fSplitDistanceMult=1.0000
-```
 
 ### Pre Generation Script & NGIO ini file setup
 
@@ -118,13 +91,12 @@ Before generating your cache, you need to determine what worldspaces require gen
 - ExtendGrassDistance = True
 - ExtendGrassCount = False
 - EnsureMaxGrassTypesPerTextureSetting = 15    ;set to max count of grass types for the grass mod. This is for Cathedral Landscapes.
-- OverwriteGrassDistance = 6144                ;Optional. This overrides skyrimprefs.ini.
-- OverwriteGrassFadeRange = 14128              ;Optional. This overrides skyrim.ini.
 - OverwriteMinGrassSize = 67                   ;Optional. This overrides skyrim.ini.
 - GlobalGrassScale = 1.15                      ;Grass-size multiplier. A slight increase will make LOD grass a bit more apparent.
 - OnlyLoadFromCache = True
-- DynDOLODGrassMode = 1
 ```
+
+***
 
 ### Bounds Data Recalculation
 
@@ -140,16 +112,18 @@ Any grass records that has no object bounds set will not generate anything durin
 
 3. Open the Creation kit and load your "Grass bounds data plugin"
 4. Click on `Grass` in the object window and highlight all the grass.
-5. Right click and select `Recalculate Bounds`
+5. Right click and select `Recalculate Bounds`.
 
 ![creation kit window showing recalculate bounds highlighted](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/RecalcBoundsCK.webp)
 
 6. Save the plugin and then exit the CK. 
 7. Place the new plugin below all of your grass plugin and ensure it is active.
 
+***
+
 ### Running Grass Cache
 
-Grass cache will take a long time and may potential take a few hours depending upon how many worldspaces you have and how good your system is. To increase the speed, you can try setting your game resolution to be 800x600. This will free up more resources for the grass cache to use.
+Grass cache will take a long time and may potentially take a few hours depending upon how many worldspaces you have and how good your system is. To increase the speed, you can try setting your game resolution to be 800x600. This will free up more resources for the grass cache to use.
 
 One you are satisfied that your modlist is ready for generation, click on the `spanner and screwdriver` icon and select, `PreCache Grass`. A pop-up will appear confirming that you wish to do this. Click `Yes` and grab a good book or fluffy animal to pet as this will take a while.
 
@@ -159,31 +133,13 @@ Once it is completed, a pop-up will appear saying that grass generation has been
 
 ## Configuring the cached data
 
-Owing to it's reliance on the .Net Framework, No Grass in Objects (NGIO) cannot be used on Skyrim versions newer than v1.5.97. Thankfully, [Grass Cache Fixes (CGF)](https://www.nexusmods.com/skyrimspecialedition/mods/60891) allows us to get around this and utilise the cached data in newer versions of the game. It also fixes issues on 1.5.97 with the NGIO mod.
-
-### Converting the CGID files
-
-Before activating the GCF mod, we need to convert our newly created cgid files into gid to ensure we replace the games pre-existing grass data. To do this, complete the following.
-
-1. Backup your newly created `Grass Cache` data. For V1.6.x users, copy this data across to your main modlist and activate it.
-2. Open up the GCF mod and copy across the ``1_rename_cgid_to_gid.bat` file into your `Grass Cache` mod, placing it in the `grass` folder amongst the `.cgid` files.
-3. Double click the .bat file to convert the files to `.gid`.
-4. Verify that the files have all been converted and then remove the bat file.
-
-### Setting DynDOLOD into gid mode
-
-As we have changed the grass data into `.gid`, we need to set DynDOLOD to read that data as the grass cache instead of `.cgid` files. To do this, complete the following.
-
-1. Navigate to where your DynDOLOD is installed and open the `Edit Scripts` folder.
-2. Open `DynDOLOD_SSE.ini` and change the following lines:
-
-```
-Expert=1
-Level32=1 ;Only if using ACMOS
-GrassGID=gid
-```
+Owing to it's reliance on the .Net Framework, No Grass in Objects (NGIO) cannot be used on Skyrim versions newer than v1.5.97. Thankfully, [Grass Cache Helper NG](https://www.nexusmods.com/skyrimspecialedition/mods/101095) allows us to get around this and utilise the cached data in newer versions of the game. It also fixes issues on 1.5.97 with the NGIO mod.
 
 ## Creating the Grass Lod
+
+If you are on 1.5.97, you can skip straight to [Texgen](#texgen). For those on latter patches, you will now need to move your generated grass cache to your modlist. Simply copy your generated mod over to your modlist running 1.6.xxx and then activate it.
+
+***
 
 ### TexGen
 
@@ -191,7 +147,7 @@ Run TexGenx64 and Allow the tool to load your mods and then set your lod setting
 
 ![TexGen settings](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/DynDOLOD/NewTexGenSettings.webp)
 
-Ensure that `Grass` checkbox is checked and that the `Texture size Min` is set to `32`. Not setting this to 32 will result in no grass billboards being created.
+Ensure that either the `Grass` or `Complex Grass` checkbox is checked and that the `Texture size Min` is set to `32`. Not setting this to 32 will result in no grass billboards being created.
 
 Press `Start` and allow the tool to generate the textures. Once completed, it will ask if you want to `Exit` or `Zip&Exit`. Choose `Exit` as you can achieve much better compression via 7Zip. Copy the data from your output folder into a new mod and activate it.
 
@@ -211,15 +167,12 @@ DynDOLOD 3.0 now includes Occlusion as part of it's toolset so we no longer need
 
 Once you have configured the settings how you wish, click `OK` and DynDOLOD will begin its generation. This can take a very long time depending on how many worldspaces you have, as well as your system specifications. Once it is completed, a pop-up will appear. As with TexGen, you have the option to either `Save&Exit` or `Save&Zip&Exit`. Choose `Save&Exit`
 
+***
+
+### Final steps
+
 Copy the data from your output folder into a new mod and activate it. On the right pane, `DynDOLOD.esm` should be moved to be the last ESM after your worldspace mods. In my case, that is Lux so I place it after `Lux - Master Plugin.esm`. `DynDOLOD.esp` should be the second last and `Occlusion.esp` shoud be the last plugin in your load order.
 
-### Setting the game to load the grass cache
+Enable `Grass Cache Helper NG` and then refresh Mod Organizer. You are now ready to test in game and see how it looks. After running the game, you may see some files in folders called `Grass` and `GraassConsole` in your `Overwrite` mod. You can safely ignore these.
 
-Once you have finished generating DynDOLOD and activated it, we are now ready to apply the fixes contained in the CGF mod. To apply the changes, complete the following.
-
-1. Open the CGF mod and open the `Grass Cache Fixes.ini` file.
-2. Remove the `;` before the lines titled `bAllowCreateGrass`, `bAllowLoadGrass`, `bEnableGrassFade`, and `fGrassFadeRange`.
-3. Open up your `SkyrimPrefs.ini` file and set `fGrassStartFadeDistance` to `6144` and `fGrassFadeRange` to `14128`.
-4. Save and close the file.
-
-You are now ready to test in game and see how it looks. **Note**: Depending on which grass mod you use depends on how much FPS you will use. I use [Fantastic Grasses](https://www.nexusmods.com/skyrim/mods/105903) which I have custom patched for bounds and complex grass and encounter minimal FPS loss. Your mileage, as always, may vary.
+**Note**: Depending on which grass mod you use depends on how much FPS you will use. I use [Fantastic Grasses](https://www.nexusmods.com/skyrim/mods/105903) which I have custom patched for bounds and complex grass and encounter minimal FPS loss. Your mileage, as always, may vary.
