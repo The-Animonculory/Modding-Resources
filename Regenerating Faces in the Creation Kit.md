@@ -14,19 +14,17 @@ The purpose of regenerating all the faces for NPC's in the game to provide a lev
 
 To effectively generate facegen, you will need the following items:
 1. The Creation Kit from Bethesda Net 
-2. [SSE Creation Kit Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/20061)
-3. [SSE Creation Kit FonixData Lip Sync Fix](https://www.nexusmods.com/skyrimspecialedition/mods/40971)
+2. [Creation Kit Platform Extended for Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/71371)
 4. The main file from [Tweaked Creation Kit Ini](https://www.nexusmods.com/skyrimspecialedition/mods/19817)
 5. [Synthesis](https://github.com/Mutagen-Modding/Synthesis/releases)
-6. [Unofficial Creation Kit Patch](https://www.nexusmods.com/skyrimspecialedition/mods/41195) (optional)
-7. [Cathedral Asset Optimizer](https://www.nexusmods.com/skyrimspecialedition/mods/23316)
-8. [My Custom BSA Packer CAO Profile](https://github.com/The-Animonculory/Modding-Resources/blob/main/BSA%20Creation.7z?raw=true) (optional but highly recommended. Extract the folder into `\Cathedral Asset Optimizer\Profiles`)
+6. [Cathedral Asset Optimizer](https://www.nexusmods.com/skyrimspecialedition/mods/23316)
+7. [My Custom BSA Packer CAO Profile](https://github.com/The-Animonculory/Modding-Resources/blob/main/BSA%20Creation.7z?raw=true) (optional but highly recommended. Extract the folder into `\Cathedral Asset Optimizer\Profiles`)
 
 It is recommended that you have some updated textures for NPC's such as [Tempered Skins](https://www.nexusmods.com/skyrimspecialedition/mods/7902) and [Reverie Skin](https://www.nexusmods.com/skyrimspecialedition/mods/64314) and upscaled/reworked warpaint. 
 
 ### CK ini Configuration
 
-It is recommended that you change the `TintMaskResolution` line in the `skyrim64_test.ini` to `1024` instead of 512 as that will result in better quality facetints being created. The difference is **very noticable**.
+It is recommended that you change the `TintMaskResolution` line in the `CreationKitPlatformExtended.ini` to `1024` instead of 512 as that will result in better quality facetints being created. The difference is **very noticable**.
 
 ## Regeneration
 
@@ -121,4 +119,4 @@ Technically speaking no, but it is recommended if you want to have consistency.
 
 **What mods do you use for this?**
 
-I use a mixture of [Reverie](https://www.nexusmods.com/skyrimspecialedition/mods/64314) and [Skysight Skins](https://www.nexusmods.com/skyrimspecialedition/mods/6580) as they fit into my list really well. The full list of what I use can be seen in [AVO's load order library](https://loadorderlibrary.com/lists/animonculory-visual-overhaul)
+I have used a wide variety of mods for this. A good mixture is [Reverie](https://www.nexusmods.com/skyrimspecialedition/mods/64314) and [Skysight Skins](https://www.nexusmods.com/skyrimspecialedition/mods/6580). BNP skins are good as well.
