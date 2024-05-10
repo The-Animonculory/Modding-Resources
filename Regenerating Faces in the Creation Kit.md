@@ -32,7 +32,7 @@ It is recommended that you change the `TintMaskResolution` line in the `Creation
 
 To ensure that all the required resources are loaded by the creation kit for facegen, we need to run a Synthesis Patcher called [NPCs Face Data](https://github.com/caiobraz/Synth-NPCs-Face-Data). This patcher will check all of your plugins for NPC's and facedata and add the masters to the plugin along with the NPC's in question.
 
-To run the patcher, firstly load Synthesis and then press the `Git Repository` button to add a new patcher. In the `Repository Path` field, paste in: "https://github.com/caiobraz/Synth-NPCs-Face-Data" (Remove the ""). Make sure the `Project` field is set to `SynthNPCsWithFaces/SynthNPCsWithFaces.csproj`. An example of how it should look is given below.
+To run the patcher, firstly load Synthesis and then press the `Git Repository` button to add a new patcher. In the `Repository Path` field, paste in: "https://github.com/gabriel-andreescu/Synth-NPCs-Face-Data" (Remove the ""). Make sure the `Project` field is set to `SynthNPCsWithFaces/SynthNPCsWithFaces.csproj`. An example of how it should look is given below.
 
 ![Synthesis Patcher](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/FaceGen//SynthesisPatcher.webp)
 
@@ -66,24 +66,39 @@ It's now time to get all the resources loaded into the creation kit. Activate an
 
 Once the plugin and all its dependencies have loaded, select the Objects window and click on the `Actors` which is in bold. To make life easier for, click on the header that says `Race` twice to filter by race.
 
-> *Note: This is not essential, but does make the next steps much much easier.*
-
 ![CK Actors Filter](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/FaceGen/CKObjectActor.webp)
 
-The following steps are extremely important to do in the correct order. **Failure to do so will result in FaceGen that is weird and not working!**
+The Creation Kit now allows for you to filter by active forms. You can enable this by ticking the boox shown in the picture below.
 
-1. Select all of the NPC's from the bottom up until you see RedguardRaceChild. **DO NOT SELECT ANY CHILD RACE**.
+![CK Active Forms tickbox](https://raw.githubusercontent.com/The-Animonculory/Modding-Resources/main/Images/FaceGen/ActiveForms_Tick.png)
+
+Depending on whether you have a lot of new NPC's and your system RAM, you will need to do one of two methods. If you have less than 32GB of ram, the alternative method is recommended.
+
+#### New Method 
+
+Complete the following steps to regenerate faces. **WARNING** This may take a while and require a lot of RAM & Virtual memory.
+
+1. Select **All** NPC's from the bottom up. If you spot any flagge "RaceChild" do not select them.
 2. Press Ctrl+F4 and confirm any dialogue box that comes up.
 3. Wait until the process is completed and then confirm any dialogue box that comes up.
-4. Select all the NPC's from after RedguardRaceChild until you see NordRaceChild. **DO NOT SELECT ANY CHILD RACE**.
+4. You can now exit the Creation Kit.
+
+#### Alternative Method.
+
+Complete the following steps to regenerate faces.
+
+1. Select all of the NPC's from the bottom up until you see RedguardRace.
+2. Press Ctrl+F4 and confirm any dialogue box that comes up.
+3. Wait until the process is completed and then confirm any dialogue box that comes up.
+4. Select all the NPC's from after RedguardRace until you see NordRaceVampire.
 5. Repeat steps 2&3.
-6. Select all the NPC's ***AFTER NORDRACEASTRID*** until you see ImperialRaceChild. **DO NOT SELECT ANY CHILD RACE OR ASTRID!!!!! IF YOU SELECT ASTRID YOU WILL BREAK ALL OF THE FACEGEN!!!!!!!!!**
+6. Select all the NPC's NordRaceVampire until you see ImperialRace
 7. Repeat steps 2&3.
-8. Select all the NPC's after ImperialRaceChild until you see BretonRaceChildVampire. **DO NOT SELECT ANY CHILD RACE OR CHILDVAMPIRERACE**.
+8. Select all the NPC's after ImperialRace until you see BretonRaceVampire.
 9. Repeat steps 2&3.
-10. Select all the NPC's after BretonRaceChild up until the top of the list of NPC's. **DO NOT SELECT ANY CHILD RACE**.
+10. Select all the NPC's after BretonRace up until the top of the list of NPC's.
 11. Repeat steps 2&3.
-12. You can now exit the creation kit.
+12. You can now exit the Creation Kit.
 
 ## Packing the files into a BSA
 
